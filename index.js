@@ -58,8 +58,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a * b;
   }
 
 
@@ -74,9 +74,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
-}
+// function dogYears(humanYears, dogAge){
+//     let dogAge = humanYears * 7;
+//     return dogAge;
+// }
 
 
 
@@ -106,10 +107,41 @@ Use the hungryDog function and feeding requirements below to do the following:
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
+// let dogAge = prompt('How old is the dog? Please input months. Example if the dog is 1 year old put 12.');
+// let dogWeight = prompt('How much does the dog weigh?');
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
-  }
+// function hungryDog(dogAge, dogWeight){
+//     /*add your code here*/
+//     if(dogAge >= 12 && dogWeight <= 5){
+//       let foodAmount = dogWeight * .05;
+//       return alert('This dog should eat ' + foodAmount + ' lbs. of food.');
+//     }else if(dogAge >= 12 && dogWeight >= 6 && dogWeight <= 10){
+//       let foodAmount = dogWeight * .04;
+//       return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+//     }else if(dogAge >= 12 && dogWeight >= 11 && dogWeight <= 15){
+//       let foodAmount = dogWeight * .03;
+//       return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+//     }else if(dogAge >= 12 && dogWeight > 15){
+//       let foodAmount = dogWeight * .02;
+//       return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+//     }else if(dogAge = 12 && dogWeight >= 6 || dogWeight <= 10){
+//       let foodAmount = dogWeight * .04;
+//       return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+//     }else if(dogAge >= 2 && dogAge <= 4){
+//       let foodAmount = dogWeight * .1;
+//       return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+//     }else if(dogAge >= 4 && dogAge <= 7){
+//       let foodAmount = dogWeight * .05;
+//       return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+//     }else if(dogAge >= 7 && dogAge <= 12){
+//       let foodAmount = dogWeight * .04;
+//       return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+//     }
+
+//   }
+
+//   hungryDog(dogAge, dogWeight);
+
 
 
 
@@ -136,8 +168,21 @@ Use the game function below to do the following:
 
 function game(user, computer){
     /*add your code here*/
+    let game = [rock, paper, scissors];
+    let rndNum = Math.random();
+    let rndChoice = rndNum * game.length();
+    let choice = Math.floor(rndChoice);
+    return alert(choice);
+
+    // if(){
+
+    // }else if(){
+
+    // }else{
+
+    // }
 }
-  
+  game();
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -226,20 +271,20 @@ function vowelCounter(/*add your code here*/) {
 
 
 
-/*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-function foo(){
-    //console.log('its working');
-    return 'bar';
-}
-/*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-export default{
-    foo,
-    multiply,
-    dogYears,
-    hungryDog,
-    game,
-    miles,
-    feet,
-    annoyingSong,
-    grade
-}
+// /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
+// function foo(){
+//     //console.log('its working');
+//     return 'bar';
+// }
+// /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
+// export default{
+//     foo,
+//     multiply,
+//     dogYears,
+//     hungryDog,
+//     game,
+//     miles,
+//     feet,
+//     annoyingSong,
+//     grade
+// }
