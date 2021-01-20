@@ -58,9 +58,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+// function multiply(a, b){
+//     return a * b;
+//   }
 
 
 
@@ -74,8 +74,9 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(humanYears, dogAge){
+    let dogAge = humanYears * 7;
+    return dogAge;
 }
 
 
@@ -106,10 +107,41 @@ Use the hungryDog function and feeding requirements below to do the following:
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
+let dogAge = prompt('How old is the dog? Please input months. Example if the dog is 1 year old put 12.');
+let dogWeight = prompt('How much does the dog weigh?');
 
-function hungryDog(/*add your code here*/){
+function hungryDog(dogAge, dogWeight){
     /*add your code here*/
+    if(dogAge >= 12 && dogWeight <= 5){
+      let foodAmount = dogWeight * .05;
+      return alert('This dog should eat ' + foodAmount + ' lbs. of food.');
+    }else if(dogAge >= 12 && dogWeight >= 6 && dogWeight <= 10){
+      let foodAmount = dogWeight * .04;
+      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+    }else if(dogAge >= 12 && dogWeight >= 11 && dogWeight <= 15){
+      let foodAmount = dogWeight * .03;
+      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+    }else if(dogAge >= 12 && dogWeight > 15){
+      let foodAmount = dogWeight * .02;
+      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+    }else if(dogAge = 12 && dogWeight >= 6 || dogWeight <= 10){
+      let foodAmount = dogWeight * .04;
+      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+    }else if(dogAge >= 2 && dogAge <= 4){
+      let foodAmount = dogWeight * .1;
+      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+    }else if(dogAge >= 4 && dogAge <= 7){
+      let foodAmount = dogWeight * .05;
+      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+    }else if(dogAge >= 7 && dogAge <= 12){
+      let foodAmount = dogWeight * .04;
+      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+    }
+
   }
+
+  hungryDog(dogAge, dogWeight);
+
 
 
 
@@ -133,12 +165,65 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+// function computerMove(){
+//   let computerChoice = [Math.floor(Math.random() * 3)];
+//   if(computerChoice === 0){
+//     return 'rock';
+//   }
+//   if(computerChoice === 1){
+//     return 'paper';
+//   }
+//   return 'scissors';
+// }
 
-function game(user, computer){
-    /*add your code here*/
-}
+// function playerMove(){
+//   let playerChoice = prompt('Pick (1) for rock, (2) for paper, or (3) for scissors.');
+//   if(playerChoice === 1){
+//     return 'rock';
+//   }
+//   if(playerChoice === 2){
+//     return 'paper';
+//   }
+//   if(playerChoice === 3){
+//     return 'scissors';
+//   }
+// }
+
+// function game(user, computer){
+// //     /*add your code here*/
+//   let computer = computerMove();
+//   let user = playerMove();
+
+//   if(user ===  'rock' && computer === 'rock'){
+//     return alert('its a tie');
+//   }
+//   if(user ===  'paper' && computer === 'paper'){
+//     return alert('its a tie');
+//   }
+//   if(user ===  'scissors' && computer === 'rocks'){
+//     return alert('its a tie');
+//   }
+//   if(user ===  'rock' && computer === 'paper'){
+//     return alert('you lose!');
+//   }
+//   if(user ===  'rock' && computer === 'scissors'){
+//     return alert('you win!');
+//   }
+//   if(user ===  'paper' && computer === 'rock'){
+//     return alert('you win!');
+//   }
+//   if(user ===  'paper' && computer === 'scissors'){
+//     return alert('you lose!');
+//   }
+//   if(user ===  'scissors' && computer === 'rock'){
+//     return alert('you lose!');
+//   }
+//   if(user ===  'scissors' && computer === 'paper'){
+//     return alert('you win');
+//   }
+// }
   
-  
+// game();
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
