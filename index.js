@@ -165,65 +165,59 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-// function computerMove(){
-//   let computerChoice = [Math.floor(Math.random() * 3)];
-//   if(computerChoice === 0){
-//     return 'rock';
-//   }
-//   if(computerChoice === 1){
-//     return 'paper';
-//   }
-//   return 'scissors';
-// }
 
-// function playerMove(){
-//   let playerChoice = prompt('Pick (1) for rock, (2) for paper, or (3) for scissors.');
-//   if(playerChoice === 1){
-//     return 'rock';
-//   }
-//   if(playerChoice === 2){
-//     return 'paper';
-//   }
-//   if(playerChoice === 3){
-//     return 'scissors';
-//   }
-// }
+function computerMove(){
+  let computerChoice = [Math.floor(Math.random() * 3)];
+  if(computerChoice === 0){
+    return 'rock';
+  }
+  if(computerChoice === 1){
+    return 'paper';
+  }
+  return 'scissors';
+}
 
-// function game(user, computer){
-// //     /*add your code here*/
-//   let computer = computerMove();
-//   let user = playerMove();
+function playerMove(){
+  let playerChoice = prompt('Type rock, paper, or scissors.');
+  playersChoice.toLowerCase();
+  return playerChoice;
+}
 
-//   if(user ===  'rock' && computer === 'rock'){
-//     return alert('its a tie');
-//   }
-//   if(user ===  'paper' && computer === 'paper'){
-//     return alert('its a tie');
-//   }
-//   if(user ===  'scissors' && computer === 'rocks'){
-//     return alert('its a tie');
-//   }
-//   if(user ===  'rock' && computer === 'paper'){
-//     return alert('you lose!');
-//   }
-//   if(user ===  'rock' && computer === 'scissors'){
-//     return alert('you win!');
-//   }
-//   if(user ===  'paper' && computer === 'rock'){
-//     return alert('you win!');
-//   }
-//   if(user ===  'paper' && computer === 'scissors'){
-//     return alert('you lose!');
-//   }
-//   if(user ===  'scissors' && computer === 'rock'){
-//     return alert('you lose!');
-//   }
-//   if(user ===  'scissors' && computer === 'paper'){
-//     return alert('you win');
-//   }
-// }
-  
-// game();
+game(user, computer);
+
+let computer = computerMove();
+let user = playerMove();
+
+function game(user, computer){
+//     /*add your code here*/
+  if(user ===  'rock' && computer === 'rock'){
+    return alert('its a tie');
+  }
+  if(user ===  'paper' && computer === 'paper'){
+    return alert('its a tie');
+  }
+  if(user ===  'scissors' && computer === 'rocks'){
+    return alert('its a tie');
+  }
+  if(user ===  'rock' && computer === 'paper'){
+    return alert('you lose!');
+  }
+  if(user ===  'rock' && computer === 'scissors'){
+    return alert('you win!');
+  }
+  if(user ===  'paper' && computer === 'rock'){
+    return alert('you win!');
+  }
+  if(user ===  'paper' && computer === 'scissors'){
+    return alert('you lose!');
+  }
+  if(user ===  'scissors' && computer === 'rock'){
+    return alert('you lose!');
+  }
+  if(user ===  'scissors' && computer === 'paper'){
+    return alert('you win');
+  }
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -236,8 +230,13 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+miles();
+
+function miles(km){
     /*add your code here*/
+    var km = prompt('Type in the kilometers to convert.')
+    let convMiles = km / 1.609;
+    return alert('' + km + ' converts to ' + convMiles + ' miles!');
   }
 
 
@@ -249,9 +248,13 @@ Using the feet function below do the following:
   2. Convert the number of cm to feet
   3. Return number of feet
 */
+feet();
 
-function feet(/*add your code here*/){
+function feet(cm){
     /*add your code here*/
+    var cm = prompt('Type in the centimeters to convert.')
+    let convCentimeters = cm / 30.48;
+    return alert('' + cm + ' converts to ' + convCentimeters + ' centimeters!');
   }
  
 
@@ -265,9 +268,15 @@ Using the annoyingSong function below do the following:
   2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
+annoyingSong();
 
-function annoyingSong(/*add your code here*/){
+function annoyingSong(numberOfSongs){
         /*add your code here*/
+        var numberOfSongs = prompt('How many times to you want to sing the song?');
+        var song = '' + i + ' bottles of soda on the wall, ' + i + ' bottles of soda, take one down pass it around ' + i-- + ' bottles of soda on the wall'
+        for(var i  = 0; i <= numberOfSongs; i--){
+          return alert(song);
+        }
   }
 
 
@@ -285,9 +294,23 @@ Using the grade function below do the following:
    60-69 should return 'you got a D'
    below should return 'you got an F'
 */
-  
-function grade(/*Your Code here */){
+  grade();
+function grade(score){
   /*Your Code here */
+  var score = prompt('What is the score?');
+  if(score >= 90 && score <= 100){
+    return alert('You got an A');
+  }
+  if(score >= 80 && score <= 89){
+    return alert('You got a B');
+  }
+  if(score >= 70 && score <= 79){
+    return alert('You got a C');
+  }
+  if(score >= 60 && score <= 69){
+    return alert('You got an D');
+  }
+  return alert('You got an F');
   }
   
   
