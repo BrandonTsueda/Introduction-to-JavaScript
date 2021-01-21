@@ -107,35 +107,32 @@ Use the hungryDog function and feeding requirements below to do the following:
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
-let dogAge = prompt('How old is the dog? Please input months. Example if the dog is 1 year old put 12.');
-let dogWeight = prompt('How much does the dog weigh?');
-
 function hungryDog(dogAge, dogWeight){
     /*add your code here*/
     if(dogAge >= 12 && dogWeight <= 5){
       let foodAmount = dogWeight * .05;
-      return alert('This dog should eat ' + foodAmount + ' lbs. of food.');
+      return 'This dog should eat ' + foodAmount + ' lbs. of food.';
     }else if(dogAge >= 12 && dogWeight >= 6 && dogWeight <= 10){
       let foodAmount = dogWeight * .04;
-      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+      return 'This do should eat ' + foodAmount + ' lbs. of food.';
     }else if(dogAge >= 12 && dogWeight >= 11 && dogWeight <= 15){
       let foodAmount = dogWeight * .03;
-      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+      return 'This do should eat ' + foodAmount + ' lbs. of food.';
     }else if(dogAge >= 12 && dogWeight > 15){
       let foodAmount = dogWeight * .02;
-      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+      return 'This do should eat ' + foodAmount + ' lbs. of food.';
     }else if(dogAge = 12 && dogWeight >= 6 || dogWeight <= 10){
       let foodAmount = dogWeight * .04;
-      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+      return 'This do should eat ' + foodAmount + ' lbs. of food.';
     }else if(dogAge >= 2 && dogAge <= 4){
       let foodAmount = dogWeight * .1;
-      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+      return 'This do should eat ' + foodAmount + ' lbs. of food.';
     }else if(dogAge >= 4 && dogAge <= 7){
       let foodAmount = dogWeight * .05;
-      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+      return 'This do should eat ' + foodAmount + ' lbs. of food.';
     }else if(dogAge >= 7 && dogAge <= 12){
       let foodAmount = dogWeight * .04;
-      return alert('This do should eat ' + foodAmount + ' lbs. of food.');
+      return 'This do should eat ' + foodAmount + ' lbs. of food.';
     }
 
   }
@@ -191,31 +188,31 @@ let user = playerMove();
 function game(user, computer){
 //     /*add your code here*/
   if(user ===  'rock' && computer === 'rock'){
-    return alert('its a tie');
+    return 'its a tie';
   }
   if(user ===  'paper' && computer === 'paper'){
-    return alert('its a tie');
+    return 'its a tie';
   }
   if(user ===  'scissors' && computer === 'rocks'){
-    return alert('its a tie');
+    return 'its a tie';
   }
   if(user ===  'rock' && computer === 'paper'){
-    return alert('you lose!');
+    return 'you lose!';
   }
   if(user ===  'rock' && computer === 'scissors'){
-    return alert('you win!');
+    return 'you win!';
   }
   if(user ===  'paper' && computer === 'rock'){
-    return alert('you win!');
+    return 'you win!';
   }
   if(user ===  'paper' && computer === 'scissors'){
-    return alert('you lose!');
+    return 'you lose!';
   }
   if(user ===  'scissors' && computer === 'rock'){
-    return alert('you lose!');
+    return 'you lose!';
   }
   if(user ===  'scissors' && computer === 'paper'){
-    return alert('you win');
+    return 'you win';
   }
 }
 
@@ -299,18 +296,18 @@ function grade(score){
   /*Your Code here */
   var score = prompt('What is the score?');
   if(score >= 90 && score <= 100){
-    return alert('You got an A');
+    return 'You got an A';
   }
   if(score >= 80 && score <= 89){
-    return alert('You got a B');
+    return 'You got a B';
   }
   if(score >= 70 && score <= 79){
-    return alert('You got a C');
+    return 'You got a C';
   }
   if(score >= 60 && score <= 69){
-    return alert('You got an D');
+    return 'You got an D';
   }
-  return alert('You got an F');
+  return 'You got an F';
   }
   
   
